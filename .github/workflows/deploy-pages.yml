@@ -23,6 +23,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           token: ${{secrets.PAT}}
-          repository-name: song-cc-rock.github.io
           branch: master
           folder: public
