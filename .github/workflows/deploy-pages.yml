@@ -1,0 +1,28 @@
+name: Deploy Blog Pages
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - ".github/**"
+      - "scaffolds/**"
+      - "source/_drafts/**"
+      -
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📦 Checkout
+        uses: actions/checkout@v2
+      - name: 🔧 Install and Build
+        run: |
+          npm ci
+          npm run build
+      - name: 🚀 Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          token: ${{secrets.PAT}}
+          repository-name: song-cc-rock.github.io
+          branch: master
+          folder: public
