@@ -9,19 +9,32 @@ on:
       - "scaffolds/**"
       - "source/_drafts/**"
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: 📦 Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🟢 Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
       - name: 🔧 Install and Build
         run: |
           npm install
           npm run build
+
       - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          token: ${{secrets.PAT}}
           branch: master
           folder: public
+          token: ${{ secrets.GITHUB_TOKEN }}
