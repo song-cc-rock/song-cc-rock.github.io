@@ -35,6 +35,6 @@ jobs:
       - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          branch: master
+          branch: source
           folder: public
           token: ${{ secrets.GITHUB_TOKEN }}
