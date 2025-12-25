@@ -8,7 +8,7 @@ on:
       - ".github/**"
       - "scaffolds/**"
       - "source/_drafts/**"
-      -
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
