@@ -1,14 +1,13 @@
 ---
 title: 使用 Github Pages 部署 Hexo
 date: 2025-12-26 14:05:59
-tags: 
-  - hexo
-  - blog
 layout: post
 index_img: ../img/hexo_bk.jpg
 banner_img: ../img/hexo_bk.jpg
-banner_img_height: 70
 abbrlink: hexo-github-pages
+tags:
+  - hexo
+  - blog
 ---
 
 ## Github Pages 部署 Hexo 博客
