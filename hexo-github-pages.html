@@ -15,23 +15,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
   <meta name="theme-color" content="#2f4154">
   <meta name="author" content="song-cc-rock">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2025/12/25/hello-world/index.html">
+    <meta name="description" content="Github Pages 部署 Hexo 博客📑 搭建 Hexo 博客12345npm install hexo-cli -ghexo init blogcd blognpm installhexo server  参考链接: Hexo 官方文档  🚀 推送到 Github 仓库并部署 创建仓库 在 Github 上创建一个新的仓库，命名为 username.github.io，其中 user">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 Github Pages 部署 Hexo">
+<meta property="og:url" content="https://yxnote.cc/hexo-github-pages.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Github Pages 部署 Hexo 博客📑 搭建 Hexo 博客12345npm install hexo-cli -ghexo init blogcd blognpm installhexo server  参考链接: Hexo 官方文档  🚀 推送到 Github 仓库并部署 创建仓库 在 Github 上创建一个新的仓库，命名为 username.github.io，其中 user">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-12-25T11:51:31.664Z">
-<meta property="article:modified_time" content="2025-12-25T11:51:31.664Z">
+<meta property="og:image" content="https://yxnote.cc/img/hexo_bk.jpg">
+<meta property="article:published_time" content="2025-12-26T14:05:59.000Z">
+<meta property="article:modified_time" content="2025-12-26T08:17:23.227Z">
 <meta property="article:author" content="song-cc-rock">
+<meta property="article:tag" content="blog">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://yxnote.cc/img/hexo_bk.jpg">
   
   
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
-  <title>Hexo</title>
+  
+  <title>使用 Github Pages 部署 Hexo - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -69,7 +79,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"yxnote.cc","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -79,6 +89,17 @@
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   
@@ -95,7 +116,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>CC&#39;s Blog</strong>
+      <strong>CC BLOG</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -191,13 +212,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/../img/hexo_bk.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text=""></span>
+            <span id="subtitle" data-typed-text="使用 Github Pages 部署 Hexo"></span>
           
         </div>
 
@@ -208,8 +229,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-12-25 11:51" pubdate>
-          2025年12月25日 中午
+        <time datetime="2025-12-26 14:05" pubdate>
+          2025年12月26日 下午
         </time>
       </span>
     
@@ -220,7 +241,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          336 字
         
       </span>
     
@@ -231,12 +252,21 @@
         
         
         
-          1 分钟
+          3 分钟
         
       </span>
     
 
     
+    
+      
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
+
+      
     
   </div>
 
@@ -268,12 +298,32 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header"></h1>
+            <h1 id="seo-header">使用 Github Pages 部署 Hexo</h1>
             
             
               <div class="markdown-body">
                 
-                
+                <h2 id="Github-Pages-部署-Hexo-博客"><a href="#Github-Pages-部署-Hexo-博客" class="headerlink" title="Github Pages 部署 Hexo 博客"></a>Github Pages 部署 Hexo 博客</h2><h3 id="📑-搭建-Hexo-博客"><a href="#📑-搭建-Hexo-博客" class="headerlink" title="📑 搭建 Hexo 博客"></a>📑 搭建 Hexo 博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-cli -g<br>hexo init blog<br><span class="hljs-built_in">cd</span> blog<br>npm install<br>hexo server<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>参考链接: <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo 官方文档</a></p>
+</blockquote>
+<h3 id="🚀-推送到-Github-仓库并部署"><a href="#🚀-推送到-Github-仓库并部署" class="headerlink" title="🚀 推送到 Github 仓库并部署"></a>🚀 推送到 Github 仓库并部署</h3><ul>
+<li><p><strong>创建仓库<br></strong><br> 在 Github 上创建一个新的仓库，命名为 <code>username.github.io</code>，其中 <code>username</code> 替换为你的 Github 用户名。这里我用 <code>master</code> 分支推送, 然后与远程仓库关联。</p>
+</li>
+<li><p><strong>添加 Github Action <br></strong><br> 在 Hexo 博客根目录下创建 <code>.github/workflows/deploy.yml</code> 文件，内容如下：</p>
+</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">GitHub</span> <span class="hljs-string">Pages</span><br><br><span class="hljs-attr">on:</span><br>  <span class="hljs-attr">push:</span><br>    <span class="hljs-attr">branches:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-string">master</span><br>    <span class="hljs-attr">paths-ignore:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-string">&quot;.github/**&quot;</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-string">&quot;scaffolds/**&quot;</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-string">&quot;source/_drafts/**&quot;</span><br><br><span class="hljs-attr">permissions:</span><br>  <span class="hljs-attr">contents:</span> <span class="hljs-string">write</span><br><br><span class="hljs-attr">jobs:</span><br>  <span class="hljs-attr">build-and-deploy:</span><br>    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span><br>    <span class="hljs-attr">steps:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">📦</span> <span class="hljs-string">Checkout</span><br>        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v4</span><br>        <span class="hljs-attr">with:</span><br>          <span class="hljs-attr">fetch-depth:</span> <span class="hljs-number">0</span><br><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">🔧</span> <span class="hljs-string">Install</span> <span class="hljs-string">and</span> <span class="hljs-string">Build</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          npm install</span><br><span class="hljs-string">          npm run build</span><br><span class="hljs-string"></span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">🚀</span> <span class="hljs-string">Deploy</span><br>        <span class="hljs-attr">uses:</span> <span class="hljs-string">JamesIves/github-pages-deploy-action@releases/v4</span><br>        <span class="hljs-attr">with:</span><br>          <span class="hljs-attr">branch:</span> <span class="hljs-string">source</span><br>          <span class="hljs-attr">folder:</span> <span class="hljs-string">public</span><br>          <span class="hljs-attr">token:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">secrets.GITHUB_TOKEN</span> <span class="hljs-string">&#125;&#125;</span><br></code></pre></td></tr></table></figure>
+
+<p>   简单解释一下, 这个 Github Action 会在每次推送到 <code>master</code> 分支时触发(已排除部分目录<code>paths-ignore</code>)，安装依赖，构建 Hexo 博客，并将生成的静态文件 <code>public</code>目录, 部署到 <code>source</code> 分支。<br><br>   这里使用的<code>github-pages-deploy</code>提供的插件, 如有不懂可以参考: <a target="_blank" rel="noopener" href="https://docs.github.com/en/actions">GitHub Actions 文档</a>。<br>   Github Pages 默认会从 <code>source</code> 分支提供服务。 配置如下:<br>   <img src="/../img/pages.png" srcset="/img/loading.gif" lazyload alt="github-pages-branch"></p>
+<blockquote>
+<p>到这里其实其实可以通过 <code>https://username.github.io/</code> 访问你的站点。</p>
+</blockquote>
+<h3 id="🌍-配置自定义域名-可选"><a href="#🌍-配置自定义域名-可选" class="headerlink" title="🌍 配置自定义域名(可选)"></a>🌍 配置自定义域名(可选)</h3><ol>
+<li>在你的域名注册商处添加一个 <code>CNAME</code> 记录，指向 <code>username.github.io</code>。</li>
+<li>在 Github 仓库 <code>Pages</code> 页面, 配置 <code>Custom domain</code> 指向你的域名, 并开启 Https, 然后即可用 <code>https://你的域名</code> 访问站点。</li>
+</ol>
+
                 
               </div>
             
@@ -281,6 +331,15 @@
             <div>
               <div class="post-metas my-3">
   
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/hexo/" class="print-no-link">#hexo</a>
+      
+        <a href="/tags/blog/" class="print-no-link">#blog</a>
+      
+    </div>
   
 </div>
 
@@ -290,8 +349,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div></div>
-      <div>http://example.com/2025/12/25/hello-world/</div>
+      <div>使用 Github Pages 部署 Hexo</div>
+      <div>https://yxnote.cc/hexo-github-pages.html</div>
     </div>
     <div class="license-meta">
       
@@ -303,7 +362,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年12月25日</div>
+          <div>2025年12月26日</div>
         </div>
       
       
@@ -345,6 +404,41 @@
             </div>
 
             
+  
+  
+    <article id="comments" lazyload>
+      
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      var light = 'github-light';
+      var dark = 'github-dark';
+      var schema = document.documentElement.getAttribute('data-user-color-scheme');
+      if (schema === 'dark') {
+        schema = dark;
+      } else {
+        schema = light;
+      }
+      window.UtterancesThemeLight = light;
+      window.UtterancesThemeDark = dark;
+      var s = document.createElement('script');
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'song-cc-rock/song-cc-rock.github.io');
+      s.setAttribute('issue-term', 'title');
+      
+      s.setAttribute('label', 'utterances');
+      
+      s.setAttribute('theme', schema);
+      s.setAttribute('crossorigin', 'anonymous');
+      document.getElementById('comments').appendChild(s);
+    })
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
           </article>
         </div>
       </div>
@@ -437,9 +531,35 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+       <span style="font-size: 0.85rem"> © 2025 <a href="https://yxnote.cc" target="_blank" rel="nofollow noopener">CC Blog</a> · Powered by <a href="https://hexo.io" target="_blank" rel="nofollow noopener">Hexo</a> & <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> </span> <div style="font-size: 0.85rem"> <span id="website-duration">载入网站运行时间...</span> <script src="/js/duration.js"></script> </div>  
     </div>
   
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
   
   
 </div>
@@ -585,6 +705,8 @@
   <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
