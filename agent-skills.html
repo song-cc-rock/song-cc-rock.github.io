@@ -21,27 +21,27 @@
   <meta name="author" content="song-cc-rock">
   <meta name="keywords" content="">
   
-    <meta name="description" content="本文介绍如何使用 Github Pages 部署 Hexo 博客，包括搭建 Hexo 博客、推送到 Github 仓库并部署，以及配置自定义域名的步骤。">
+    <meta name="description" content="Agent Skills 是扩展Claude 功能的模块化能力。每个Skill 包含指令、元数据和可选资源（脚本、模板），Claude 在相关时会自动使用这些资源。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用 Github Pages 部署 Hexo">
-<meta property="og:url" content="https://yxnote.cc/hexo-github-pages.html">
+<meta property="og:title" content="MCP 不香了，Claude Code 又推出了 Skills！">
+<meta property="og:url" content="https://yxnote.cc/agent-skills.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="本文介绍如何使用 Github Pages 部署 Hexo 博客，包括搭建 Hexo 博客、推送到 Github 仓库并部署，以及配置自定义域名的步骤。">
+<meta property="og:description" content="Agent Skills 是扩展Claude 功能的模块化能力。每个Skill 包含指令、元数据和可选资源（脚本、模板），Claude 在相关时会自动使用这些资源。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://yxnote.cc/img/hexo_bk.jpg">
-<meta property="article:published_time" content="2025-12-26T14:05:59.000Z">
-<meta property="article:modified_time" content="2026-01-22T08:42:07.299Z">
+<meta property="og:image" content="https://yxnote.cc/img/agent_skills_bk.jpg">
+<meta property="article:published_time" content="2026-01-22T14:14:33.000Z">
+<meta property="article:modified_time" content="2026-01-22T08:42:07.298Z">
 <meta property="article:author" content="song-cc-rock">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="博客">
+<meta property="article:tag" content="Agent">
+<meta property="article:tag" content="Skills">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yxnote.cc/img/hexo_bk.jpg">
+<meta name="twitter:image" content="https://yxnote.cc/img/agent_skills_bk.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>使用 Github Pages 部署 Hexo - Hexo</title>
+  <title>MCP 不香了，Claude Code 又推出了 Skills！ - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -228,13 +228,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/../img/hexo_bk.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/../img/agent_skills_bk.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="使用 Github Pages 部署 Hexo"></span>
+            <span id="subtitle" data-typed-text="MCP 不香了，Claude Code 又推出了 Skills！"></span>
           
         </div>
 
@@ -245,8 +245,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-12-26 14:05" pubdate>
-          2025年12月26日 下午
+        <time datetime="2026-01-22 14:14" pubdate>
+          2026年1月22日 下午
         </time>
       </span>
     
@@ -257,7 +257,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          336 字
+          512 字
         
       </span>
     
@@ -268,7 +268,7 @@
         
         
         
-          3 分钟
+          5 分钟
         
       </span>
     
@@ -314,68 +314,33 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">使用 Github Pages 部署 Hexo</h1>
+            <h1 id="seo-header">MCP 不香了，Claude Code 又推出了 Skills！</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="Github-Pages-部署-Hexo-博客"><a href="#Github-Pages-部署-Hexo-博客" class="headerlink" title="Github Pages 部署 Hexo 博客"></a>Github Pages 部署 Hexo 博客</h2><h3 id="📑-搭建-Hexo-博客"><a href="#📑-搭建-Hexo-博客" class="headerlink" title="📑 搭建 Hexo 博客"></a>📑 搭建 Hexo 博客</h3><div class="code-wrapper"><pre><code class="hljs bash">npm install hexo-cli -g
-hexo init blog
-<span class="hljs-built_in">cd</span> blog
-npm install
-hexo server</code></pre></div>
-<blockquote>
-<p>参考链接: <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo 官方文档</a></p>
-</blockquote>
-<h3 id="🚀-推送到-Github-仓库并部署"><a href="#🚀-推送到-Github-仓库并部署" class="headerlink" title="🚀 推送到 Github 仓库并部署"></a>🚀 推送到 Github 仓库并部署</h3><ul>
-<li><p><strong>创建仓库<br></strong><br> 在 Github 上创建一个新的仓库，命名为 <code>username.github.io</code>，其中 <code>username</code> 替换为你的 Github 用户名。这里我用 <code>master</code> 分支推送, 然后与远程仓库关联。</p>
-</li>
-<li><p><strong>添加 Github Action <br></strong><br> 在 Hexo 博客根目录下创建 <code>.github/workflows/deploy.yml</code> 文件，内容如下：</p>
-</li>
+                <h2 id="本文介绍如何在-Claude-中使用-Skills"><a href="#本文介绍如何在-Claude-中使用-Skills" class="headerlink" title="本文介绍如何在 Claude 中使用 Skills"></a>本文介绍如何在 Claude 中使用 Skills</h2><h3 id="🤔-什么是-Agent-Skills"><a href="#🤔-什么是-Agent-Skills" class="headerlink" title="🤔 什么是 Agent Skills"></a>🤔 什么是 Agent Skills</h3><p>  <code>Agent Skills</code> 是扩展 <code>AI</code> 编程助手功能的模块化能力。每个 <code>skill</code> 由一个包含指令的 <code>SKILL.md</code> 文件以及可选的脚本和模板组成。 2025 年 12 月，<code>Anthropic</code> 将 <code>Agent Skills</code> 规范作为开放标准发布，<code>OpenAI</code> 也在 <code>Codex CLI</code> 和 <code>ChatGPT</code> 中采用了相同格式。<code>Skills</code> 由模型调用—— <code>AI</code> 会根据上下文自主决定何时使用它们。<br>  你也可以把他理解为 <code>超级提示词</code>, 它通常以下面三部分组成:<br>  <div class="code-wrapper"><pre><code class="hljs yaml"><span class="hljs-string">my-skill/</span>
+<span class="hljs-string">├──</span> <span class="hljs-string">SKILL.md</span>           <span class="hljs-comment"># 主指令，精简</span>
+<span class="hljs-string">├──</span> <span class="hljs-string">references/</span>
+<span class="hljs-string">│</span>   <span class="hljs-string">├──</span> <span class="hljs-string">REFERENCE.md</span>   <span class="hljs-comment"># 详细 API 文档</span>
+<span class="hljs-string">│</span>   <span class="hljs-string">└──</span> <span class="hljs-string">EXAMPLES.md</span>    <span class="hljs-comment"># 使用示例</span>
+<span class="hljs-string">└──</span> <span class="hljs-string">scripts/</span>
+    <span class="hljs-string">└──</span> <span class="hljs-string">helper.py</span>      <span class="hljs-comment"># 辅助脚本</span></code></pre></div></p>
+<ul>
+<li><strong>SKILL.md</strong>: 核心指令，执行指引。</li>
+<li><strong>references&#x2F;</strong>: 可选的参考资料，包含更详细的文档及API规范, 代码片段等。</li>
+<li><strong>scripts&#x2F;</strong>: 可选的执行脚本，提供额外的功能支持。</li>
 </ul>
-<div class="code-wrapper"><pre><code class="hljs yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">GitHub</span> <span class="hljs-string">Pages</span>
-
-<span class="hljs-attr">on:</span>
-  <span class="hljs-attr">push:</span>
-    <span class="hljs-attr">branches:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-string">master</span>
-    <span class="hljs-attr">paths-ignore:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-string">&quot;.github/**&quot;</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-string">&quot;scaffolds/**&quot;</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-string">&quot;source/_drafts/**&quot;</span>
-
-<span class="hljs-attr">permissions:</span>
-  <span class="hljs-attr">contents:</span> <span class="hljs-string">write</span>
-
-<span class="hljs-attr">jobs:</span>
-  <span class="hljs-attr">build-and-deploy:</span>
-    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
-    <span class="hljs-attr">steps:</span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">📦</span> <span class="hljs-string">Checkout</span>
-        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v4</span>
-        <span class="hljs-attr">with:</span>
-          <span class="hljs-attr">fetch-depth:</span> <span class="hljs-number">0</span>
-
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">🔧</span> <span class="hljs-string">Install</span> <span class="hljs-string">and</span> <span class="hljs-string">Build</span>
-        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span>
-<span class="hljs-string">          npm install</span>
-<span class="hljs-string">          npm run build</span>
-<span class="hljs-string"></span>
-      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">🚀</span> <span class="hljs-string">Deploy</span>
-        <span class="hljs-attr">uses:</span> <span class="hljs-string">JamesIves/github-pages-deploy-action@releases/v4</span>
-        <span class="hljs-attr">with:</span>
-          <span class="hljs-attr">branch:</span> <span class="hljs-string">source</span>
-          <span class="hljs-attr">folder:</span> <span class="hljs-string">public</span>
-          <span class="hljs-attr">token:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">secrets.GITHUB_TOKEN</span> <span class="hljs-string">&#125;&#125;</span></code></pre></div>
-
-<p>   简单解释一下, 这个 Github Action 会在每次推送到 <code>master</code> 分支时触发(已排除部分目录<code>paths-ignore</code>)，安装依赖，构建 Hexo 博客，并将生成的静态文件 <code>public</code>目录, 部署到 <code>source</code> 分支。<br><br>   这里使用的<code>github-pages-deploy</code>提供的插件, 如有不懂可以参考: <a target="_blank" rel="noopener" href="https://docs.github.com/en/actions">GitHub Actions 文档</a>。<br>   Github Pages 默认会从 <code>source</code> 分支提供服务。 配置如下:<br>   <img src="/../img/pages.png" srcset="/img/loading.gif" lazyload alt="github-pages-branch"></p>
-<blockquote>
-<p>到这里其实其实可以通过 <code>https://username.github.io/</code> 访问你的站点。</p>
-</blockquote>
-<h3 id="🌍-配置自定义域名-可选"><a href="#🌍-配置自定义域名-可选" class="headerlink" title="🌍 配置自定义域名(可选)"></a>🌍 配置自定义域名(可选)</h3><ol>
-<li>在你的域名注册商处添加一个 <code>CNAME</code> 记录，指向 <code>username.github.io</code>。</li>
-<li>在 Github 仓库 <code>Pages</code> 页面, 配置 <code>Custom domain</code> 指向你的域名, 并开启 Https, 然后即可用 <code>https://你的域名</code> 访问站点。</li>
+<p>  在 <code>Claude</code> 中可安装 <code>Skills</code> 市场及 <code>Skills</code> 插件, 同样也可自定义 <code>Skills</code>。可通过 <code>/skills</code> 命令查看已经安装的 Skill。<br>  <img src="/../img/skills.png" srcset="/img/loading.gif" lazyload alt="skills"><br>  如何自定义 <code>Skills</code> ?</p>
+<ol>
+<li>创建一个文件夹 <code>.claude/skills</code> , 用来存放所有的 <code>Skills</code>。</li>
+<li>按照上述的目录结构来定义一个 <code>Skills</code> (这里推荐一个用来创建 <code>Skills</code> 的 <code>Skills</code>, <code>skill-creator</code>)。</li>
+<li>重启后生效</li>
 </ol>
+<p>  如下图, 这里我使用 <code>skill-creator</code> 创建了一个自然语言生成 <code>SQL</code> 的 <code>Skills</code>。<br>  <img src="/../img/skill_creator.png" srcset="/img/loading.gif" lazyload alt="skills_creator"></p>
+<h3 id="🚀-如何使用-Agent-Skills"><a href="#🚀-如何使用-Agent-Skills" class="headerlink" title="🚀 如何使用 Agent Skills"></a>🚀 如何使用 Agent Skills</h3><p>  可以使用自然语言描述你想要完成的任务, <code>Claude</code> 会根据上下文自动调用相关的 <code>Skills</code> 来完成任务。同样也可在 <code>Claude</code> 通过 <code>/skill-name</code> 来显式调用某个 <code>Skills</code>。<br>  例如, 这里我使用上面创建的 <code>generator_sql</code> 来生成一个查询某个用户订单的 <code>SQL</code> 语句。<br>  <img src="/../img/sql_generator.png" srcset="/img/loading.gif" lazyload alt="generator_sql"></p>
+<p>这里可以参考一个 <code>Skills</code> 市场, 里面有很多现成的 <code>Skills</code> 可供使用, 链接如下 <a target="_blank" rel="noopener" href="https://skillsmp.com/">skillsmp</a>:<br><img src="/../img/skill_marketplace.png" srcset="/img/loading.gif" lazyload alt="skill_marketplace"></p>
+<h3 id="📑-写在最后"><a href="#📑-写在最后" class="headerlink" title="📑 写在最后"></a>📑 写在最后</h3><p>  总的来说, <code>MCP</code> 本质上是提供大模型调用外部工具的能力, 让 <code>AI</code> 不在置身孤岛。而 <code>Skills</code> 则是通过模块化的方式, 让 <code>AI</code> 能够更好地利用这些外部工具来完成复杂任务。</p>
 
                 
               </div>
@@ -394,7 +359,7 @@ hexo server</code></pre></div>
     
       <span class="category-chain">
         
-  <a href="/categories/%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/" class="category-chain-item">部署教程</a>
+  <a href="/categories/AI/" class="category-chain-item">AI</a>
   
   
 
@@ -409,9 +374,9 @@ hexo server</code></pre></div>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Hexo/" class="print-no-link">#Hexo</a>
+        <a href="/tags/Skills/" class="print-no-link">#Skills</a>
       
-        <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="print-no-link">#博客</a>
+        <a href="/tags/Agent/" class="print-no-link">#Agent</a>
       
     </div>
   
@@ -423,8 +388,8 @@ hexo server</code></pre></div>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>使用 Github Pages 部署 Hexo</div>
-      <div>https://yxnote.cc/hexo-github-pages.html</div>
+      <div>MCP 不香了，Claude Code 又推出了 Skills！</div>
+      <div>https://yxnote.cc/agent-skills.html</div>
     </div>
     <div class="license-meta">
       
@@ -436,7 +401,7 @@ hexo server</code></pre></div>
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年12月26日</div>
+          <div>2026年1月22日</div>
         </div>
       
       
@@ -480,15 +445,15 @@ hexo server</code></pre></div>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/agent-skills.html" title="MCP 不香了，Claude Code 又推出了 Skills！">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">MCP 不香了，Claude Code 又推出了 Skills！</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/hexo-github-pages.html" title="使用 Github Pages 部署 Hexo">
+                        <span class="hidden-mobile">使用 Github Pages 部署 Hexo</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
