@@ -448,7 +448,7 @@ footer:
   # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
   content: '
     <span style="font-size: 0.85rem">
-      © 2025 <a href="https://yxnote.cc" target="_blank" rel="nofollow noopener">CC Blog</a>
+      © 2026 <a href="https://yxnote.cc" target="_blank" rel="nofollow noopener">CC Blog</a>
       · Powered by
         <a href="https://hexo.io" target="_blank" rel="nofollow noopener">Hexo</a> &
         <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
