@@ -5,9 +5,12 @@ layout: post
 index_img: ../img/hexo_bk.jpg
 banner_img: ../img/hexo_bk.jpg
 abbrlink: hexo-github-pages
+description: 本文介绍如何使用 Github Pages 部署 Hexo 博客，包括搭建 Hexo 博客、推送到 Github 仓库并部署，以及配置自定义域名的步骤。
 tags:
-  - hexo
-  - blog
+  - Hexo
+  - 博客
+categories:
+  - 部署教程 
 ---
 
 ## Github Pages 部署 Hexo 博客
